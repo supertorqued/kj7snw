@@ -26,10 +26,17 @@ Embedding on external sites (QRZ)
 
 Horizontal widget
 - For a horizontal, full-width stat bar (good to place under or above your map), use the `data-layout="horizontal"` attribute. If embedding via iframe, point to `embed-horizontal.html`:
+ - For a horizontal, full-width stat bar (good to place under or above your map), use the `data-layout="horizontal"` attribute. If embedding via iframe, point to `embed-horizontal.html`.
 
-  <iframe src="https://kjsnw.github.io/qso-arc-map/widgets/base-stats.html" width="800" height="72" style="border:0;" loading="lazy"></iframe>
+  Pages URL (recommended):
 
-The horizontal widget shows: `QSOs` (count), `Longest (mi)` (rounded), and `Longest Call` (call sign).
+  <iframe src="https://raw.githubusercontent.com/supertorqued/kj7snw/main/widgets/base-stats.html" width="800" height="72" style="border:0;" loading="lazy"></iframe>
+
+  Raw file URL (serves file contents; may not execute as a page in all contexts):
+
+  https://raw.githubusercontent.com/supertorqued/kj7snw/main/widgets/base-stats.html
+
+  The horizontal widget shows: `QSOs` (count), `Longest (mi)` (rounded), and `Longest Call` (call sign).
 
 Security and CORS
 - Ensure your GitHub Pages site is public so QRZ visitors can fetch the JSON and the widget script. The browser will enforce CORS; serving both JSON and the widget from the same GitHub Pages origin avoids most issues.
